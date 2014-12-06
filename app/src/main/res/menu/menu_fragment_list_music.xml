@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/list_music_fragment_menu_item_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="ifRoom"
+        />
+    
+    <item 
+        android:id="@+id/list_music_fragment_menu_item_clear_search"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/clear_search"
+        android:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/list_music_fragment_menu_item_favorite"
+        android:icon="@android:drawable/btn_star_big_off"
+        android:title="@string/favorite"
+        android:showAsAction="collapseActionView"
+        />
+
+    <item
+        android:id="@+id/list_music_fragment_menu_item_weight"
+        android:title="@string/weight_distribution"
+        android:showAsAction="collapseActionView"
+        />
+</menu>

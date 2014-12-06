@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+        Smallest width configuration qualifier was introduced in Android 3.2, so xlarge is < 3.2.
+        small   =>  320x426dp
+        normal  =>  320x470dp
+        large   =>  480x640dp
+        xlarge  =>  720x960dp
+     -->
+    <item name="activity_main" type="layout">@layout/activity_tablet_fragment_simple</item>
+    
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Why So Formal</string>
+    <string name="get_together_app_title">Let\'s get together yeah yeah Yo?</string>
+    <string name="music_player">Music Player</string>
+    <string name="music_list">Music List</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="favorite">Favorite</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="loop">Loop</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear Search</string>
+    <string name="search_hint">Type String</string>
+    <string name="weight_distribution">Weight Distribution</string>
+    <string name="distribute_me">Distribute Me</string>
+    <string name="distribution">Distribution</string>
+    <string name="distribution_hint">Distribution Hint</string>
+    <string name="okay">Ok</string>
+    <string name="resource_name">Resource name</string>
+
+</resources>
