@@ -3,6 +3,8 @@ why-so-formal
 
 Arena for playing around w/ Android
 
+Project name derived from "Why so serious" quote.
+
 Following lists some of the features for this application
 * Music player that allows customizable shuffling of the musics 
   * For instance let's say there exists 1000 musics and one sets the partition to 4, allowing 250 in each partition. 
