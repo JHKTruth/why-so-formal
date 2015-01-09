@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.jhk.whysoformal.activity.musicentry;
+package com.jhk.whysoformal.activity.musiclist.musicentry;
 
 import com.jhk.whysoformal.activity.SimpleFragmentActivity;
-import com.jhk.whysoformal.activity.musicentry.fragment.MusicPlayerFragment;
+import com.jhk.whysoformal.activity.musiclist.musicentry.fragment.MusicPlayerFragment;
 import com.jhk.whysoformal.service.MusicService;
 
 import android.content.Intent;

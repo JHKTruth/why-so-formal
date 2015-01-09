@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.jhk.whysoformal.algorithm;
+package com.jhk.whysoformal.context.audio;
 
 import android.util.Log;
 
@@ -39,10 +39,7 @@ import java.util.Random;
  *
  * Created by Ji Kim on 12/3/2014.
  */
-public class AudioShuffler {
-
-    public static final String WEIGHT_DISTRIBUTION = "WEIGHT_DISTRIBUTION";
-    public static final float[] DEFAULT_WEIGHT_DISTRIBUTION = new float[]{2.0f, 1.0f, 1.0f, 1.0f};
+class AudioShuffler {
 
     private static final String TAG = "AudioShuffler";
 
@@ -59,7 +56,8 @@ public class AudioShuffler {
             super();
 
             mBitSet = new BitSet(size);
-            mBitSize = size;
+            mBitSize = size; //note that BitSet's length + size has different meanings than what is desired
+                             //so need to track the limit in the bit vector
             mWeight = weight;
         }
 
@@ -101,14 +99,14 @@ public class AudioShuffler {
     private List<AudioShufflerPartition> mPartitions;
     private float mCompleteWeight;
 
-    public AudioShuffler() {
+    AudioShuffler() {
         super();
 
         mRandom = new Random(); //note that Random has internal lock, so best to create an instance
                                 // rather than static; just note since single app anyway
     }
 
-    public void reset(int dataSize, float[] weightDistribution) {
+    void reset(int dataSize, float[] weightDistribution) {
 
         int partitionSize = (int) Math.ceil(dataSize / weightDistribution.length);
         int remaining = dataSize % weightDistribution.length;
@@ -146,8 +144,7 @@ public class AudioShuffler {
         return aspInstance;
     }
 
-
-    public int getNextRandomPosition() {
+    int getNextRandomPosition() {
 
         //first decide which AudioShufflerPartition one should use by using the weightDistribution
         AudioShufflerPartition aspInstance = getNextRandomAudioShufflerPartition();

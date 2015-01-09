@@ -41,7 +41,7 @@
         </activity>
 
         <activity
-            android:name=".activity.musicentry.MusicPlayerActivity"
+            android:name=".activity.musiclist.musicentry.MusicPlayerActivity"
             android:label="@string/music_player" >
 
             <meta-data

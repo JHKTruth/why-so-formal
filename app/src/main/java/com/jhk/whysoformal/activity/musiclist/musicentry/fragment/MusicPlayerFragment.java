@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.jhk.whysoformal.activity.musicentry.fragment;
+package com.jhk.whysoformal.activity.musiclist.musicentry.fragment;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import com.jhk.whysoformal.R;
-import com.jhk.whysoformal.context.AudioContext;
+import com.jhk.whysoformal.context.audio.AudioContext;
 import com.jhk.whysoformal.service.MusicService;
 import com.jhk.whysoformal.service.MusicService.MEDIA_PLAYER_STATUS_UPDATE;
 import com.jhk.whysoformal.util.Constants;

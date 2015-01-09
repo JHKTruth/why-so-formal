@@ -25,10 +25,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import com.jhk.whysoformal.R;
-import com.jhk.whysoformal.activity.moveMove.fragment.MoveMoveFragment;
-import com.jhk.whysoformal.activity.musicentry.MusicPlayerActivity;
+import com.jhk.whysoformal.activity.musiclist.musicentry.MusicPlayerActivity;
 import com.jhk.whysoformal.activity.musiclist.fragment.MusicListFragment;
-import com.jhk.whysoformal.context.AudioContext;
+import com.jhk.whysoformal.context.audio.AudioContext;
 import com.jhk.whysoformal.service.MusicService;
 
 /**

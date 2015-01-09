@@ -17,8 +17,7 @@
 package com.jhk.whysoformal.activity.musiclist.fragment;
 
 import com.jhk.whysoformal.R;
-import com.jhk.whysoformal.algorithm.AudioShuffler;
-import com.jhk.whysoformal.context.AudioContext;
+import com.jhk.whysoformal.context.audio.AudioContext;
 import com.jhk.whysoformal.custom.view.graph.GraphStyleAttributes;
 import com.jhk.whysoformal.custom.view.graph.GraphView;
 import com.jhk.whysoformal.custom.view.graph.axis.BaseAxis;
@@ -269,12 +268,11 @@ public class MusicListFragment extends ListFragment
         String query = PreferenceManager.getDefaultSharedPreferences(getActivity()).getString(AudioContext.SEARCH_QUERY, null);
 
         //numberOfPartitions is the xAxis whereas the weight distribution is the yAxis. Allow user to drag the curve around, and get the value at 1, 2, 3, and 4 to denote the weight distribution
-        //int numberOfPartitions = PreferenceManager.getDefaultSharedPreferences(getActivity()).getInt(AudioShuffler.NUMBER_OF_PARTITIONS, AudioShuffler.DEFAULT_NUMBER_OF_PARTITIONS);
-        String weightDistributionString = PreferenceManager.getDefaultSharedPreferences(getActivity()).getString(AudioShuffler.WEIGHT_DISTRIBUTION, null);
+        String weightDistributionString = PreferenceManager.getDefaultSharedPreferences(getActivity()).getString(AudioContext.SHUFFLER_WEIGHT_DISTRIBUTION_KEY, null);
         float[] weightDistribution;
 
         if(weightDistributionString == null) {
-            weightDistribution = AudioShuffler.DEFAULT_WEIGHT_DISTRIBUTION;
+            weightDistribution = AudioContext.SHUFFLER_DEFAULT_WEIGHT_DISTRIBUTION;
         }else{
             String[] splitted = weightDistributionString.split(",");
             weightDistribution = new float[splitted.length];

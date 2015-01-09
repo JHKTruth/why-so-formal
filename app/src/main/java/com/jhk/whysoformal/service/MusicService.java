@@ -18,7 +18,7 @@ package com.jhk.whysoformal.service;
 
 import java.io.IOException;
 
-import com.jhk.whysoformal.context.AudioContext;
+import com.jhk.whysoformal.context.audio.AudioContext;
 import com.jhk.whysoformal.util.Constants;
 
 import android.app.IntentService;

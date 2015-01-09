@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.jhk.whysoformal.context;
+package com.jhk.whysoformal.context.audio;
 
 import java.util.Stack;
 
@@ -22,12 +22,13 @@ import android.content.Context;
 import android.database.Cursor;
 import android.media.MediaPlayer;
 
-import com.jhk.whysoformal.algorithm.AudioShuffler;
-
 /**
  * Created by Ji Kim on 12/3/2014.
  */
 public final class AudioContext {
+
+    public static final String SHUFFLER_WEIGHT_DISTRIBUTION_KEY = "WEIGHT_DISTRIBUTION";
+    public static final float[] SHUFFLER_DEFAULT_WEIGHT_DISTRIBUTION = new float[]{2.0f, 1.0f, 1.0f, 1.0f};
 
     public static final String SEARCH_QUERY = "SEARCH_QUERY";
     public static final int LOOPING_INDEX = -1;
