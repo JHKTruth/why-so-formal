@@ -3,7 +3,7 @@ why-so-formal
 
 Arena for playing around w/ Android
 
-Project name derived from "Why so serious" quote.
+Project name derived from "Why so serious" quote of Dark Knight.
 
 Following lists some of the features for this application
 * Music player that allows customizable shuffling of the musics 
